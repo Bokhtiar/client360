@@ -1,0 +1,22 @@
+/* Apply to the container where you want the scrollbar */
+.scroll-container {
+    height: 500px; /* Example height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.scroll-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* Optionally, you can style the scrollbar track and handle */
+.scroll-container::-webkit-scrollbar-track {
+    background: transparent; /* Optionally, set a background color */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: transparent; /* Optionally, set a background color */
+}
